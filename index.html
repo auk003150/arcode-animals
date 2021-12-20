@@ -1,41 +1,19 @@
-<!DOCTYPE html>
 <html>
 <head>
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+<script>
+.row {
+  display: flex;
 }
 
-li {
-  float: left;
+.column {
+  flex: 50%;
 }
+</script>
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-</style>
-
-<base target="iframe_a">
-</head>
 <body>
-  
-<iframe src="https://google.com.hk/" name="iframe_a" height="1000px" width="100%" title="AR Animals"></iframe>
-
-<ul>
-  <li><a href="https://www.google.com.hk?search=hello" target="iframe_a">孟加拉虎</a></li>
-</ul>
-  
+<div class="row">
+  <div class="column"></div>
+  <div class="column"></div>
+</div>
 </body>
 </html>
