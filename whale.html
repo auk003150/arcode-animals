@@ -5,13 +5,10 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
-      <a-assets>
-        <a-asset-item id="glb-asset" src="whale.glb"></a-asset-item>
-      </a-assets>
       <a-marker-camera preset="hiro">
       <a-entity
         animation-mixer
-        gltf-model="#glb-asset"
+        gltf-model=""
         scale="5 5 5">
       </a-entity>
       </a-marker-camera>
