@@ -4,16 +4,17 @@
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs>
-      <a-marker preset="hiro">
-        <a-entity
-          position="0 0 0"
-          scale="5 5 5"
-          rotation="0 0 0"
-          gltf-model="whale.glb"
-        ></a-entity>
-      </a-marker>
-      <a-entity camera></a-entity>
+     <a-scene embedded arjs>
+        <a-assets>
+            <a-asset-item id="glb-asset" src="whale.glb"></a-asset-item>
+        </a-assets>
+        <a-marker-camera preset="hiro">
+            <a-entity
+                animation-mixer
+                gltf-model="#glb-asset"
+                scale="5 5 5">
+            </a-entity>
+         </a-marker-camera>
     </a-scene>
     <p> trial 2 </p>
   </body>
